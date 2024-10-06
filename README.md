@@ -47,8 +47,8 @@ This is a FastAPI application that serves as a conversational assistant, capable
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/jay-arora31/Ragbot/
-   cd Ragbot
+   git clone https://github.com/jay-arora31/ChatbotRag/
+   cd ChatbotRag
   
 2. Create a Virtual Environment
 
