@@ -1,0 +1,168 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.App-header {
+  background-color: #4CAF50;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  height: 80vh;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-form {
+  display: flex;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.back {
+  background-color: #4CAF50;
+  width: 100%;
+}
+
+/* App.css or Message.css */
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.App-header {
+  background-color: #4CAF50;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Center items vertically */
+}
+
+.language-dropdown {
+  margin-right: 20px; /* Space from the right edge */
+}
+
+.language-dropdown select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: white; /* Background color */
+  cursor: pointer; /* Change cursor on hover */
+  transition: border-color 0.3s; /* Smooth transition */
+}
+
+.language-dropdown select:focus {
+  border-color: #4CAF50; /* Change border color on focus */
+}
+
+.message {
+  margin-bottom: 10px; /* Spacing between messages */
+  padding: 10px;
+  border-radius: 5px;
+  position: relative; /* For positioning any child elements */
+}
+
+.message.ai {
+  background-color: #e3f2fd; /* Light blue for AI messages */
+  align-self: flex-start; /* Align AI messages to the start */
+}
+
+.message.user {
+  background-color: #c8e6c9; /* Light green for user messages */
+  align-self: flex-end; /* Align user messages to the end */
+}
+
+/* Improve button styles */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Add some spacing in the main area */
+main {
+  padding: 20px; /* Added padding around the main content */
+}

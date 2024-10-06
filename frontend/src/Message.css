@@ -1,0 +1,29 @@
+.message {
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    max-width: 75%;
+    word-wrap: break-word;
+  }
+  
+  .message.user {
+    align-self: flex-end;
+    background-color: #daf8da;
+    color: #333;
+  }
+  
+  .message.greeting,
+  .message.answer,
+  .message.weather,
+  .message.clarification {
+    align-self: flex-start;
+    background-color: #f1f0f0;
+    color: #333;
+  }
+  
+  .message.error {
+    align-self: center;
+    background-color: #fdd;
+    color: #d00;
+  }
+  
